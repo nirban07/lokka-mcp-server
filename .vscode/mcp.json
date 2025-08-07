@@ -1,0 +1,16 @@
+{
+	"servers": {
+		"remote-mcp-server": {
+            "type": "http",
+            "url": "https://{functionapp-name}.azurewebsites.net/mcp",
+            "headers": {
+                "x-functions-key": "{access key}"
+            }
+        },
+        "local-mcp-server": {
+            "type": "http",
+            "url": "http://0.0.0.0:7071/mcp"
+        }
+	},
+	"inputs": []
+}
